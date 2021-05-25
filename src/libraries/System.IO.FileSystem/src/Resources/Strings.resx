@@ -149,6 +149,9 @@
   <data name="ArgumentNull_Path" xml:space="preserve">
     <value>Path cannot be null.</value>
   </data>
+  <data name="ArgumentNullOrEmpty_Extension" xml:space="preserve">
+    <value>Extension cannot be null or empty.</value>
+  </data>
   <data name="ArgumentOutOfRange_Enum" xml:space="preserve">
     <value>Enum value was out of legal range.</value>
   </data>

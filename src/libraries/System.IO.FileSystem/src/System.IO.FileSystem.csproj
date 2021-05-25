@@ -38,6 +38,7 @@
     <Compile Include="System\IO\ReadLinesIterator.cs" />
     <Compile Include="System\IO\SearchOption.cs" />
     <Compile Include="System\IO\SearchTarget.cs" />
+    <Compile Include="System\IO\TemporaryDirectory.cs" />
   </ItemGroup>
   <!-- All targets references -->
   <ItemGroup>

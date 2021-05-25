@@ -299,4 +299,36 @@ namespace System.IO.Enumeration
         public static bool MatchesWin32Expression(System.ReadOnlySpan<char> expression, System.ReadOnlySpan<char> name, bool ignoreCase = true) { throw null; }
         public static string TranslateWin32Expression(string? expression) { throw null; }
     }
+    public sealed class TemporaryDirectory : IDisposable
+    {
+        public TemporaryDirectory() { }
+        public TemporaryDirectory(string tempDir) { }
+        public TemporaryDirectory(bool keepFiles) { }
+        public TemporaryDirectory(string tempDir, bool storeFileNames) { }
+        void System.IDisposable.Dispose() { }
+        public void Dispose(bool disposing) { }
+        ~TemporaryDirectory() { }
+        public static string TemporaryDirectoryPrefix { get { throw null; } set { } }
+        public static FileStream CreateTempFileStream(bool keepFile = false) { throw null; }
+        public static FileStream CreateTempFileStream(string fileExtension, bool keepFile = false) { throw null; }
+        public static FileStream CreateTempFileStream(CreateTempFileStreamFunc func, bool keepFile = false) { throw null; }
+        public static FileStream CreateTempFileStream(CreateTempFileStreamFunc func, string fileExtension, bool keepFile = false) { throw null; }
+        public delegate FileStream CreateTempFileStreamFunc(string fileName, bool keepFile);
+        public FileStream GetTempFileNameStream() { throw null; }
+        public FileStream GetTempFileNameStream(bool keepFile) { throw null; }
+        public FileStream GetTempFileNameStream(string fileExtension) { throw null; }
+        public FileStream GetTempFileNameStream(string fileExtension, bool keepFile) { throw null; }
+        public FileStream GetTempFileNameStream(CreateTempFileStreamFunc func) { throw null; }
+        public FileStream GetTempFileNameStream(CreateTempFileStreamFunc func, bool keepFile) { throw null; }
+        public FileStream GetTempFileNameStream(CreateTempFileStreamFunc func, string fileExtension) { throw null; }
+        public FileStream GetTempFileNameStream(CreateTempFileStreamFunc func, string fileExtension, bool keepFile) { throw null; }
+        public string GetTempFileName() { throw null; }
+        public string GetTempFileName(bool storeFileName) { throw null; }
+        public string GetTempFileName(string fileExtension) { throw null; }
+        public string GetTempFileName(string fileExtension, bool storeFileName) { throw null; }
+        public string BaseTemporaryDirectory { get { throw null; } }
+        public bool StoreFileNames { get { throw null; } }
+        public void Clear() { }
+        public IReadOnlyList<string> FileNameList { get { throw null; } }
+    }
 }
